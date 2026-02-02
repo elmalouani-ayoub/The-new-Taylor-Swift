@@ -52,9 +52,6 @@ The following project proved that the technical elements of a song aren't alone 
 
 ##  Repository Structure
 * `The_new_taylor_swift.ipynb`: The main Jupyter Notebook with commented code and full pipeline.
-* `Report_Final.pdf`: Detailed study justifying algorithm choices and business insights.
-* `Slides.pdf`: Presentation used for the final defense.
-* `data/`: Data source references and metadata.
 * `assets/`: Images and graphs used in this README.
 
 ##  Academic Context
