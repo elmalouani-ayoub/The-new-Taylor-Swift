@@ -22,7 +22,7 @@ Here are some key insights from our analysis:
 
 ### 1. Feature Correlation
 
-![image](assets/feature_importance.png)
+![image](assets/heatmap.png)
 
 ### 2. Model Performance
 The following table shows the results of our best model (Random Forest) for predicting song success:
@@ -36,11 +36,19 @@ The following table shows the results of our best model (Random Forest) for pred
 | **Weighted Avg** | 0.66 | 0.65 | 0.66 | 853 |
 
 The confusion matrix of our model:
-![Model Comparison](assets/matrice confusion du modele.png)
+
+![Model Comparison](assets/matrice_confusion.png)
+
+Top 20 most important features: 
+
+![Model Comparison](assets/feature_importance.png)
 
 The impact of the emotional tone of the song on its probablity of becoming a hit:
 
+![Model Comparison](assets/valence.png)
+
 ### 3. Discussion
+The following project proved that the technical elements of a song aren't alone enough to decide on if the will be a hit. Yes, dancibility and the emotional tone of the song play a role in the over all enjoyibility of a song, but other factors come into play: the label, the popularity of the artist, and the current social trends.
 
 ##  Repository Structure
 * `The_new_taylor_swift.ipynb`: The main Jupyter Notebook with commented code and full pipeline.
