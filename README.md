@@ -14,7 +14,7 @@ This project strictly follows the **CRISP-DM** methodology to ensure a rigorous 
 
 ## Tech Stack & Methodology
 * **Data Prep:** Cleaning massive datasets, feature engineering, and merging audio features with historical charts.
-* **Machine Learning:** Implementation and comparison of **at least 3 models** per question (Random Forest, XGBoost, SVM, etc.) with hyperparameter tuning.
+* **Machine Learning:** Implementation and comparison of **at least 3 models** per question (Random Forest, KNN, SVM, etc.) with hyperparameter tuning.
 * **Tools:** Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn).
 
 ##  Results & Visualizations
@@ -22,16 +22,28 @@ Here are some key insights from our analysis:
 
 ### 1. Feature Correlation
 
-![Correlation Matrix](assets/feature importance)
-
-*Insight: Visualizing the link between energy, danceability, and chart success.*
+![image](assets/feature_importance.png)
 
 ### 2. Model Performance
-![Model Comparison](assets/mmatrice confusion du modele)
-*Comparison of the 3 algorithms tested to predict the "Hit" potential.*
+The following table shows the results of our best model (Random Forest) for predicting song success:
+
+| Class | Precision | Recall | F1-Score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| **0 (Non-Hit)** | 0.77 | 0.73 | 0.75 | 586 |
+| **1 (Hit)** | 0.41 | 0.46 | 0.44 | 267 |
+| **Accuracy** | | | **0.65** | 853 |
+| **Macro Avg** | 0.59 | 0.60 | 0.59 | 853 |
+| **Weighted Avg** | 0.66 | 0.65 | 0.66 | 853 |
+
+The confusion matrix of our model:
+![Model Comparison](assets/matrice confusion du modele.png)
+
+The impact of the emotional tone of the song on its probablity of becoming a hit:
+
+### 3. Discussion
 
 ##  Repository Structure
-* `Predicting_Hits.ipynb`: The main Jupyter Notebook with commented code and full pipeline.
+* `The_new_taylor_swift.ipynb`: The main Jupyter Notebook with commented code and full pipeline.
 * `Report_Final.pdf`: Detailed study justifying algorithm choices and business insights.
 * `Slides.pdf`: Presentation used for the final defense.
 * `data/`: Data source references and metadata.
