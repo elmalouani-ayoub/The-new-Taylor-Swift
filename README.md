@@ -21,11 +21,13 @@ This project strictly follows the **CRISP-DM** methodology to ensure a rigorous 
 Here are some key insights from our analysis:
 
 ### 1. Feature Correlation
-![Correlation Matrix](assets/correlation_matrix.png)
+
+![Correlation Matrix](assets/feature importance)
+
 *Insight: Visualizing the link between energy, danceability, and chart success.*
 
 ### 2. Model Performance
-![Model Comparison](assets/model_performance.png)
+![Model Comparison](assets/mmatrice confusion du modele)
 *Comparison of the 3 algorithms tested to predict the "Hit" potential.*
 
 ##  Repository Structure
